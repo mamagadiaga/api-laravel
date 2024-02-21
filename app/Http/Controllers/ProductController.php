@@ -35,7 +35,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -67,7 +67,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        
+
         return new ProductResource($product);
     }
 
@@ -79,7 +79,7 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        
+
     }
 
     /**
@@ -116,7 +116,7 @@ class ProductController extends Controller
     public function ProductUserCheck($product){
         if (Auth::id() !== $product->user_id) {
            throw new ProductNotBelongsToUser;
-           
+
         }
     }
 }
