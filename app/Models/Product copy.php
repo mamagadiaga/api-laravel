@@ -13,15 +13,15 @@ class Product extends Model
 
     protected $fillable = ['name','image','detail','stock','discount','price'];
 
-    public function stocks()
-    {
-        return $this->hasMany(Stock::class);
-    }
+    // public function stocks()
+    // {
+    //     return $this->hasMany(Stock::class);
+    // }
 
-    public function orderItems()
-    {
-        return $this->hasMany(OrderItem::class);
-    }
+    // public function orderItems()
+    // {
+    //     return $this->hasMany(OrderItem::class);
+    // }
 
 
     public function reviews(){

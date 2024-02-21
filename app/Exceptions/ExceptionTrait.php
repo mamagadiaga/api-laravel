@@ -5,9 +5,7 @@ namespace App\Exceptions;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-/**
- * 
- */
+
 trait ExceptionTrait
 {
     public function apiException($request, $exception){
