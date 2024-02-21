@@ -23,3 +23,5 @@ Route::group(['prefix' => 'products'],function(){
     Route::apiResource('/{product}/reviews','ReviewController');
 
 });
+
+Route::post('/orders', 'OrderController@create');

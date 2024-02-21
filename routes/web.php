@@ -1,5 +1,7 @@
 <?php
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::post('/orders', 'OrderController@create');
+Route::get('/orders', 'OrderViewController@index');
+Route::get('/orders/{id}', 'OrderViewController@show');
